@@ -34,6 +34,8 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 "80 chars limit
 set colorcolumn=80
 
+"Stop writing .netrwhist
+let g:netrw_dirhistmax = 0
 "====== Plugin =====
 "CoC
   "use <c-space>for trigger completion
