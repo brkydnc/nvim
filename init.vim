@@ -23,6 +23,7 @@ set relativenumber
 
 "colors & etc.
 set termguicolors
+let g:gruvbox_contrast_dark='hard'
 colorscheme gruvbox
 
 "set system clipboard
