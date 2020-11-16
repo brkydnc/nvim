@@ -1,50 +1,40 @@
 call plug#begin('~/.local/share/nvim/plugged')
-
-"Common
 Plug 'tpope/vim-surround'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
 Plug 'gruvbox-community/gruvbox'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-"Language specific
-Plug 'mxw/vim-jsx'
-Plug 'pangloss/vim-javascript'
-
+Plug 'herringtondarkholme/yats.vim'
 call plug#end()
 
-"tabs into spaces
-set tabstop=2 shiftwidth=2 expandtab
-
-"lines
+set tabstop=2 shiftwidth=2 expandtab smarttab
+set smartindent autoindent
 set cursorline
 set number
 set relativenumber
-
-"colors & etc.
+set clipboard+=unnamedplus
 set termguicolors
+set colorcolumn=80
+set updatetime=300 "Faster completion
+set mouse=a
+set splitbelow " Horizontal splits will automatically be below
+set splitright " Vertical splits will automatically be to the right
+set formatoptions-=cro " Stop newline continution of comments
+set timeoutlen=500
+
+let mapleader="\<Space>"
+let g:netrw_dirhistmax = 0 "Stop writing .netrwhist
 let g:gruvbox_contrast_dark='hard'
 colorscheme gruvbox
 
-"set system clipboard
-set clipboard+=unnamedplus
-
-"key mappings
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
-"80 chars limit
-set colorcolumn=80
-
-"Stop writing .netrwhist
-let g:netrw_dirhistmax = 0
-"====== Plugin =====
-"CoC
-  "use <c-space>for trigger completion
-  inoremap <silent><expr> <c-space> coc#refresh()
-  "Use <Tab> and <S-Tab> to navigate the completion list:
-  inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-  inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+"===== Plugin =====
+"coc
+set nobackup "Recommended by coc
+inoremap <silent><expr> <c-space> coc#refresh()
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 "lightline 
-  "remove 'insert' text
-  set noshowmode
+set noshowmode "Remove 'insert' text
