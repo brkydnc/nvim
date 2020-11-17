@@ -4,6 +4,8 @@ Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
 Plug 'gruvbox-community/gruvbox'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'herringtondarkholme/yats.vim'
 call plug#end()
 
@@ -38,3 +40,7 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 "lightline 
 set noshowmode "Remove 'insert' text
+
+"fzf
+nnoremap <silent> <Leader>f :Files<CR>
+let $FZF_DEFAULT_OPTS='--reverse'
