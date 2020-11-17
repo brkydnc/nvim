@@ -11,6 +11,7 @@ call plug#end()
 
 set tabstop=2 shiftwidth=2 expandtab smarttab
 set smartindent autoindent
+set nowrap
 set cursorline
 set number
 set relativenumber
