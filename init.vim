@@ -18,7 +18,6 @@ set relativenumber
 set clipboard+=unnamedplus
 set termguicolors
 set colorcolumn=80
-set mouse=a
 set splitbelow " Horizontal splits will automatically be below
 set splitright " Vertical splits will automatically be to the right
 set formatoptions-=cro " Stop newline continution of comments
@@ -55,7 +54,6 @@ nmap <silent> gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
-
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
     execute 'h '.expand('<cword>')
@@ -65,10 +63,8 @@ function! s:show_documentation()
     execute '!' . &keywordprg . " " . expand('<cword>')
   endif
 endfunction
-
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
-
 " Remap keys for applying codeAction to the current buffer.
 nmap <leader>ac  <Plug>(coc-codeaction)
 " Apply AutoFix to problem on the current line.
