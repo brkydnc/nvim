@@ -16,7 +16,4 @@ return require('packer').startup(function(use)
   use 'itchyny/lightline.vim'
   -- LSP
   use 'neovim/nvim-lspconfig'
-  use 'kabouzeid/nvim-lspinstall'
-  -- Autocompletion
-  use 'hrsh7th/nvim-compe'
 end)
