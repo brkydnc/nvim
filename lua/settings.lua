@@ -6,7 +6,6 @@ vim.bo.smartindent = true
 
 -- Local to window
 vim.wo.wrap = false
-vim.wo.cursorline = true
 vim.wo.number = true
 vim.wo.relativenumber = true
 vim.wo.colorcolumn = "80"
@@ -14,7 +13,6 @@ vim.wo.colorcolumn = "80"
 -- Global
 vim.o.smarttab = true
 vim.o.clipboard = "unnamedplus"
-vim.o.termguicolors = true
 vim.o.splitbelow = true
 vim.o.splitright = true
 vim.o.timeoutlen= 500
