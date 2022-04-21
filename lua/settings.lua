@@ -1,6 +1,6 @@
 -- Local to buffer
-vim.bo.tabstop=2
-vim.bo.shiftwidth=2
+vim.bo.tabstop=4
+vim.bo.shiftwidth=4
 vim.bo.expandtab = true
 vim.bo.smartindent = true
 
@@ -17,3 +17,4 @@ vim.o.splitbelow = true
 vim.o.splitright = true
 vim.o.timeoutlen= 500
 vim.o.showmode = false
+vim.cmd("let g:coq_settings = { 'auto_start': 'shut-up' }")

@@ -12,8 +12,9 @@ return require('packer').startup(function(use)
   use 'tpope/vim-surround'
   use 'tpope/vim-commentary'
   -- Fancy
-  use 'gruvbox-community/gruvbox'
-  use 'itchyny/lightline.vim'
+  -- use 'gruvbox-community/gruvbox'
+  -- use 'itchyny/lightline.vim'
   -- LSP
   use 'neovim/nvim-lspconfig'
+  use 'ms-jpq/coq_nvim'
 end)

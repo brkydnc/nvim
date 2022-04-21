@@ -1,2 +1,2 @@
-vim.g.gruvbox_contrast_dark = 'hard'
-vim.cmd('colorscheme gruvbox')
+vim.cmd('colorscheme peachpuff')
+vim.cmd('highlight Comment ctermfg=green')
