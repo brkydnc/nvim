@@ -1,9 +1,3 @@
--- Local to buffer
-vim.bo.tabstop=4
-vim.bo.shiftwidth=4
-vim.bo.expandtab = true
-vim.bo.smartindent = true
-
 -- Local to window
 vim.wo.wrap = false
 vim.wo.number = true
@@ -11,7 +5,10 @@ vim.wo.relativenumber = true
 vim.wo.colorcolumn = "80"
 
 -- Global
-vim.o.smarttab = true
+vim.o.tabstop=4
+vim.o.shiftwidth=4
+vim.o.expandtab = true
+vim.o.softtabstop=4
 vim.o.clipboard = "unnamedplus"
 vim.o.mouse = "a"
 vim.o.splitbelow = true
