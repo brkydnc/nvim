@@ -13,6 +13,7 @@ vim.wo.colorcolumn = "80"
 -- Global
 vim.o.smarttab = true
 vim.o.clipboard = "unnamedplus"
+vim.o.mouse = "a"
 vim.o.splitbelow = true
 vim.o.splitright = true
 vim.o.timeoutlen= 500
