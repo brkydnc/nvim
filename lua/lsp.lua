@@ -50,7 +50,7 @@ settings = {
   }
 }
 
-local servers = { "rust_analyzer" }
+local servers = { "rust_analyzer", "clangd" }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup { on_attach = on_attach, settings = settings[server] }
 end
