@@ -10,11 +10,19 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   -- Additional functionality
   use 'tpope/vim-surround'
+  use 'kaarmu/typst.vim'
   use 'tpope/vim-commentary'
   -- Fancy
-  -- use 'gruvbox-community/gruvbox'
-  -- use 'itchyny/lightline.vim'
+  use 'gruvbox-community/gruvbox'
+  use 'itchyny/lightline.vim'
   -- LSP
   use 'neovim/nvim-lspconfig'
   use 'ms-jpq/coq_nvim'
+
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.3',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 end)
