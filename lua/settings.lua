@@ -1,3 +1,6 @@
+-- Local to buffer
+vim.bo.textwidth = "80"
+
 -- Local to window
 vim.wo.wrap = false
 vim.wo.number = true
