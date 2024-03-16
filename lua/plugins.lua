@@ -30,4 +30,10 @@ return require('packer').startup(function(use)
       "folke/zen-mode.nvim",
       opts = { backdrop = 0.95, width = 150, }
   }
+
+  -- Install markdown preview 
+  use({
+      "iamcco/markdown-preview.nvim",
+      run = function() vim.fn["mkdp#util#install"]() end,
+  })
 end)
