@@ -13,7 +13,8 @@ return require('packer').startup(function(use)
   use 'kaarmu/typst.vim'
   use 'tpope/vim-commentary'
   -- Fancy
-  use 'gruvbox-community/gruvbox'
+  -- use 'gruvbox-community/gruvbox'
+  use 'Mofiqul/vscode.nvim'
   use 'itchyny/lightline.vim'
   -- LSP
   use 'neovim/nvim-lspconfig'

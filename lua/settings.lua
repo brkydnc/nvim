@@ -1,5 +1,5 @@
 -- Local to buffer
-vim.bo.textwidth = "80"
+vim.bo.textwidth = 80
 
 -- Local to window
 vim.wo.wrap = false
