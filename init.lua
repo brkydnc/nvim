@@ -24,6 +24,7 @@ vim.g.maplocalleader = "\\"
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
+      'antiagainst/vim-tablegen',
       'tpope/vim-surround',
       'kaarmu/typst.vim',
       'tpope/vim-commentary',
@@ -31,9 +32,15 @@ require("lazy").setup({
       'itchyny/lightline.vim',
       'neovim/nvim-lspconfig',
       'ms-jpq/coq_nvim',
+      -- {
+      --   'nvim-telescope/telescope.nvim', tag = '0.1.7',
+      --   dependencies = { 'nvim-lua/plenary.nvim' }
+      -- },
       {
-        'nvim-telescope/telescope.nvim', tag = '0.1.8',
-        dependencies = { 'nvim-lua/plenary.nvim' }
+          "ibhagwan/fzf-lua",
+          -- optional for icon support
+          dependencies = { "nvim-tree/nvim-web-devicons" },
+          opts = {}
       },
       {
         'nvim-treesitter/nvim-treesitter',
