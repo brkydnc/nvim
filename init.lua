@@ -21,6 +21,8 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+require("settings")
+
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
@@ -31,11 +33,7 @@ require("lazy").setup({
       'Mofiqul/vscode.nvim',
       'itchyny/lightline.vim',
       'neovim/nvim-lspconfig',
-      'ms-jpq/coq_nvim',
-      -- {
-      --   'nvim-telescope/telescope.nvim', tag = '0.1.7',
-      --   dependencies = { 'nvim-lua/plenary.nvim' }
-      -- },
+      { 'ms-jpq/coq_nvim', lazy = false },
       {
           "ibhagwan/fzf-lua",
           -- optional for icon support
@@ -64,6 +62,6 @@ require("lazy").setup({
   checker = { enabled = true },
 })
 
-require("settings")
 require("keymappings")
 require("colorscheme")
+require("lsp")
